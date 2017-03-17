@@ -32,7 +32,7 @@ Capability to add an extra placeholder just above the 3rd section
 
 
 ## Test Cases
-- Component should work in all major browsers - Chrome / Mozilla / Safari / Opera / IE etc.
+- Component should work across all major browsers - Chrome / Mozilla / Safari / Opera / IE etc.
 
 ## Steps to Start
 - Set Github repository at your end for this project, we will merge them later
