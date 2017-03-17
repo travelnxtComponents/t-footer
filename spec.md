@@ -16,17 +16,18 @@
 - In case only 1 tab is provided -> it will be treated as Label / heading
 - In case no tabs, section to hide
 
-- Content under Tabs
+Content under Tabs
 - List of items will be given to every tab
 - Every tab will have 6 columns
 - Placement of items in column will be horizontley
 - Every item will have "Text" and "URL"
 - No limit on max count for items
 
--Section 3
+Section 3
 - Divided in 2 sections : CONTACT US (properties - Label, Content for above label) and FOLLOW US (properties List of icons and URL , Wrap the icons in two lines if required)
 
-- Capability to add an extra placeholder just above the 3rd section : So that user can add anything like e.g. We are secured by ABC...and if someone wants to showcase some awards and all.
+Capability to add an extra placeholder just above the 3rd section
+- So that user can add anything like e.g. We are secured by ABC...and if someone wants to showcase some awards and all.
 
 
 
