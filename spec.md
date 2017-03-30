@@ -3,10 +3,8 @@
 ### Component Use
 
 ```javascript
-/*
 <t-footer sections=[[sections]] links=[[links]] resources=[[resources]]>
 </t-footer>
-*/
 
 ```
 # Sections
