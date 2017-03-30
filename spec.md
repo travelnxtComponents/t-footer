@@ -1,10 +1,169 @@
-# t-footer
+# Footer component
 
-### Component Signature
+### Component Use
 
-```html
+```javascript
+/*
+<t-footer sections=[[sections]] links=[[links]] resources=[[resources]]>
+</t-footer>
+*/
+
+```
+# Sections
+```javascript
+{
+    "selectedIndex": 0,
+    //section level default behaviour
+    "openInNewTab": true,
+    "sections": [
+        {
+            "title": "Domestic Destinations",
+            "code": "DD",
+            "options": [
+                {
+                    "title": "Delhi abcd",
+                    "url": "/delhi.html",
+                    "openInNewTab": false
+                },
+                {
+                    "title": "Bangalore hotels",
+                    "code": "bkh"
+                }
+            ]
+        },
+        {
+            "title": "International Destinations",
+            "code": "Int",
+            "options": [
+                {
+                    "title": "Singapore abcd",
+                    "url": "/singapore.html"
+                },
+                {
+                    "title": "Krabi hotels",
+                    "url": "/kh.html"
+                }
+            ]
+        }
+    ]
+}
+```
+
+# Links
+```javascript
+{
+    //default link behaviour
+    "openInNewTab": true,
+    "primaryLinks": {
+        "title": "Contact Us",
+        "options": [
+            {
+                "title": "Ph.:",
+                "options": [
+                    {
+                        "title": "+215 (801) 4567",
+                        "url": "tel:+2158014567"
+                    },
+                    {
+                        "title": "+215 (802) 6789",
+                        "url": "tel:+2158026789"
+                    }
+                ]
+            },
+            {
+                "title": "Fax:",
+                "options": [
+                    {
+                        "title": "215-123-7890",
+                        "url": "tel:+2151237890"
+                    }
+                ]
+            },
+            {
+                "title": "Email:",
+                "options": [
+                    {
+                        "title": "enquiry@travelnxt.com",
+                        "url": "mailto:enquiry@travelnxt.com"
+                    }
+                ]
+            }
+        ]
+    },
+    "secondaryLinks": {
+        "title": "Follow Us",
+        "options": [
+            {
+                "iconName": "facebook",
+                "url": "http://fb.com/abcd"
+            },
+            {
+                "iconName": "twitter",
+                "url": "http://twitter.com/abcd"
+            }
+        ]
+    },
+    "bottomStartLinks": [
+        {
+            "title": "About Us",
+            "url": "/About",
+            "openInNewTab": false,
+        },
+        {
+            "title": "Terms of Use",
+            "url": "http://example.com/terms.html"
+        },
+    ],
+    "bottomEndLinks": [
+        {
+            //since no url is gives so it should show up as text not an anchor
+            "title": "@ 2017 Mystique All rights reserved"
+        }
+    ]
+}
+```
+
+# Resources
+```javascript
+{
+    "öptionSeperator": ",",
+    "icons": {
+        "facebook": "fb-icon",
+        "twitter": "tw-icon"
+    }
+}
+```
+
+# Methods
+```javascript
+getState() - returns current footer state object
+```
+
+# Events
+```javascript
+
+Raise
+/*
+t-footer-section-tap - {"code": "DD","data":{"index":2}}
+t-footer-item-tap - {"code": "bkh"}
+t-footer-bkh-tap e.g t-footer-{"code"}-tap  - {"code": "bkh"}
+*/
+
+Listen
+/*
+t-footer-section-select - {"code":"DD", "data":{"name":"abcd}} or {"code":"", "data":{"index":2}}
+*/
+
+```
 
 
+# Styles
+```javascript
+Need variable for defining text colour - default & selected
+Need variable for defining topbar background colour
+Need variable for defining primary links background colour
+Need variable for defining hover or selection background colour
+Need mixins for defining section\primary\secondary link titles
 
 ```
 
