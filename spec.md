@@ -206,3 +206,8 @@ Capability to add an extra placeholder just above the 3rd section
 - Vaadin elements - https://vaadin.com/docs/-/part/elements/elements-getting-started.html
 - Google - https://elements.polymer-project.org/browse?package=google-web-components
 - Tavisca Web component style Guide - https://drive.google.com/open?id=0B7BT_2nBFNYVR2tscE9pRnVJYmc
+
+# Ballpark estimates
+```javascript
+1 Week/ 7 man days
+```
