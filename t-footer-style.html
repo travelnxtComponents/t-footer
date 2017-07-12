@@ -2,27 +2,35 @@
   <template>
     <style>
        :host {
-        --t-footer-cols: 6 --paper-tabs-selection-bar: {
+        --t-footer-cols: 6;
+         --paper-tabs-selection-bar: {
           border-bottom: 2px solid var(--t-footer-tab-bar-color, #fff);
-        }
-        ;
+        };
+
+        
+
         --t-footer-section-link: {
           color: var(--t-footer-color, #9a9ca8);
-        }
+        };
 
         --t-footer-primary-link: {
           color: var(--t-footer-color, #9a9ca8);
-        }
+        };
 
         --t-footer-secondary-link: {
           color: var(--t-footer-color, #9a9ca8);
-        }
+        };
 
         --t-footer-bottom-link: {
           color: var(--t-footer-color, #9a9ca8);
-        }
+        };
 
-        --t-footer-link-hover: {}
+        --t-footer-link-hover: {};
+      }
+     
+
+      [hidden]{
+            display:  none !important;
       }
 
       .social-links iron-icon {
@@ -45,7 +53,7 @@
         margin-bottom: 5px;
         display: inline-block;
         text-decoration: none;
-        @apply(--t-footer-primary-link)
+        @apply --t-footer-primary-link
       }
 
       a {
@@ -55,21 +63,22 @@
       }
 
       .section-link {
-        @apply(--t-footer-section-link)
+        @apply --t-footer-section-link
       }
 
       .secondary-link {
         margin-bottom: 5px;
         display: inline-block;
         text-decoration: none;
-        @apply(--t-footer-secondary-link)
+        @apply --t-footer-secondary-link
       }
 
       .bottom-link {
         margin-bottom: 5px;
         display: inline-block;
         text-decoration: none;
-        @apply(--t-footer-bottom-link)
+        font-size: 14px;
+        @apply --t-footer-bottom-link
       }
 
       a:hover {
