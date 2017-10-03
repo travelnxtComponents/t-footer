@@ -8,6 +8,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "coveralls": "^2.11.8",
     "web-component-tester": "https://github.com/t2ym/web-component-tester.git#wct6-plugin",
     "web-component-tester-istanbul": "https://github.com/t2ym/web-component-tester-istanbul.git#0.10.1-wct6.10"
   },
