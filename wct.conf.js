@@ -1,7 +1,7 @@
 module.exports = {
   plugins: {
     istanbul: {
-      dir: "./coverage",
+      dir: "./test/coverage-report",
       reporters: ["text-summary", "lcov"],
       include: [
         "/t-footer/t-footer.html"
@@ -10,6 +10,9 @@ module.exports = {
         "/polymer/polymer.js",
         "/wecomponentsjs/webcomponents-lite.js"
       ]
+    },
+    local: {
+      "browsers": ["chrome"]
     }
   }
 }
