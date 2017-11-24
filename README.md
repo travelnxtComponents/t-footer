@@ -7,3 +7,9 @@ Travel - Home Page footer component
 <img src="https://github.com/travelnxtComponents/t-footer/blob/master/t-Footer.png" alt="Footer component">
 
 Know more about component please visit https://github.com/travelnxtComponents/t-footer/blob/master/spec.md
+
+  ### Styling
+
+  `<t-footer>` provides the following custom properties and mixins for styling:
+  
+  https://nxtcomponent.github.io/t-footer/components/t-footer/
